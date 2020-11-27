@@ -19,4 +19,11 @@ public class HelloController {
         System.out.println("Got a new connection ....");
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
+
+
+    @GetMapping("/bundle")
+    public String greeting1(@RequestParam(value = "name", defaultValue = "World") String name) {
+        System.out.println("Got a new connection ....");
+        return "THis is bundlew";
+    }
 }
