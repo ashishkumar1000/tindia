@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Film {
+public class Movies {
     private int id;
     private String title;
     private String description;
